@@ -46,12 +46,12 @@ function Products(props) {
 
           <div className="ddd">
 
-            <div className="product-list" style={{ backgroundColor: '#61dafb' }}>
+            <div className="product-list" style={{ backgroundColor: '#968e8e' }}>
               {
                 props.products.map((product) => (
 
                   product.category === props.categories.activeCategory ?
-                    <Card key={product.name} className="root" style={{ backgroundColor: '#61dafb' }}>
+                    <Card key={product.name} className="root" style={{ backgroundColor: '#968e8e' }}>
                       <CardHeader
                         avatar={
                           <Avatar aria-label="recipe" >
@@ -70,7 +70,7 @@ function Products(props) {
                       <Button
                         data-testid='button'
                         variant="contained"
-                        color='warning'
+                        color="primary"
                         style={{ width: 100 + '%' }}
                         onClick={() => {
                           props.addToCart(product);
